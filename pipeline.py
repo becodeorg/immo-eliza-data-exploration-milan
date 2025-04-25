@@ -67,7 +67,7 @@ cleaning_pipe = Pipeline(steps=[
     #Remove Outliers here
 
     ('replace_na_mean', NAReplacer(column=MEAN_REPLACE_LIST, new_value='mean')), #Fill NaN with mean value
-    ('room_count_replace_na', RoomCountCalculator()), #Estimate roomCount from other features
+    # ('room_count_replace_na', RoomCountCalculator()), #Estimate roomCount from other features
     # ('prepare_strings', StringPrepare()), #prepare every strings
     # ('boolean_transformer', BooleanTransformer()), #Convert boolean strings to integers (True=1, False=0)
 ])
